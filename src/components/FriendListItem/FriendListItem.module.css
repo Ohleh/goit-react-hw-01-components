@@ -1,0 +1,29 @@
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+
+  /* outline: 1px solid tomato; */
+}
+
+.on {
+  /* border-radius: 50%; */
+  /* border-color:  rgb(74, 194, 106); */
+  /* background-color: rgb(74, 194, 106); */
+  color: rgb(163, 232, 170);
+  padding-right: 10px;
+}
+
+.off {
+  color: rgb(231, 70, 29);
+  padding-right: 10px;
+}
+
+.onlineStatus {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(163, 232, 170);
+}
