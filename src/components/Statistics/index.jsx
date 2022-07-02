@@ -1,16 +1,16 @@
-import cssStat from '../Statistics/Index.module.css';
+import css from '../Statistics/Index.module.css';
 import propTypes from 'prop-types';
 
 const Statistics = ({ title, stats }) => {
   return (
-    <section className={cssStat.statistics}>
+    <section className={css.statistics}>
       {/* check for title, render H2 */}
       {title ? <h2 className="title">{title}</h2> : ''}
 
-      <ul className="stat-list">
+      <ul className={css.statList}>
         {stats.map(el => (
           <li className="item" key={el.id}>
-            <span className="label">{el.label} - </span>
+            <span className="label">{el.label} </span>
             <span className="percentage">{el.percentage}%</span>
           </li>
         ))}
