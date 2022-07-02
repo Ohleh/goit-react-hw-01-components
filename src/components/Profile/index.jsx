@@ -1,10 +1,17 @@
 import propTypes from 'prop-types';
+import cssTitle from '../Profile/Profile.module.css';
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <div className="profile">
+    <div className={cssTitle.profile}>
       <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" width="200" />
+        <img
+          key={username}
+          src={avatar}
+          alt="User avatar"
+          className="avatar"
+          width="200"
+        />
         <p className="name">{username}</p>
         <p className="tag">@{tag}</p>
         <p className="location">{location}</p>
@@ -29,6 +36,7 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
 };
 
 Profile.propTypes = {
+  key: propTypes.string.isRequired,
   username: propTypes.string.isRequired,
   tag: propTypes.string.isRequired,
   location: propTypes.string.isRequired,

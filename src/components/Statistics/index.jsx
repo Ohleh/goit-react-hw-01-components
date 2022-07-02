@@ -1,8 +1,9 @@
+import cssStat from '../Statistics/Index.module.css';
 import propTypes from 'prop-types';
 
 const Statistics = ({ title, stats }) => {
   return (
-    <section className="statistics">
+    <section className={cssStat.statistics}>
       {/* check for title, render H2 */}
       {title ? <h2 className="title">{title}</h2> : ''}
 

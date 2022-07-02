@@ -1,0 +1,7 @@
+.transactionTable {
+  /* width: 945px; */
+  margin: 10px;
+  /* background-color: rgb(209, 215, 247); */
+  border-radius: 5px;
+  box-shadow: 0.1em 0.1em 0.3em rgba(0, 0, 0, 0.2);
+}
