@@ -40,7 +40,6 @@ Profile.propTypes = {
   username: propTypes.string.isRequired,
   tag: propTypes.string.isRequired,
   location: propTypes.string.isRequired,
-  // username: propTypes.string.isRequired,
 
   stats: propTypes.shape({
     followers: propTypes.number.isRequired,
