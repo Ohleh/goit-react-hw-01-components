@@ -27,9 +27,10 @@ ul {
 
 table {
   border-collapse: collapse;
-  /* width: 950px; */
   width: 58%;
   border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 thead {
@@ -41,8 +42,7 @@ td {
   padding: 15px;
   border: 1px solid rgb(242, 242, 242);
   border-right: none;
-  /* border-top: none; */
-  /* outline: 0.5px solid rgb(71, 80, 255); */
+
   text-align: center;
 }
 
@@ -57,7 +57,5 @@ th {
 }
 
 tr {
-  /* outline: 0.5px solid tomato; */
-  /* border-top: none; */
   border-bottom: none;
 }
