@@ -6,7 +6,7 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
     <div className={css.profile}>
       <div className="description">
         <img
-          // key={username}
+          key={username}
           src={avatar}
           alt="User avatar"
           className={css.avatar}
@@ -40,7 +40,7 @@ Profile.propTypes = {
   username: propTypes.string.isRequired,
   tag: propTypes.string.isRequired,
   location: propTypes.string.isRequired,
-  username: propTypes.string.isRequired,
+  // username: propTypes.string.isRequired,
 
   stats: propTypes.shape({
     followers: propTypes.number.isRequired,
