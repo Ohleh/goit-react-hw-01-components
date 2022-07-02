@@ -1,6 +1,11 @@
 import css from '../Statistics/Index.module.css';
 import propTypes from 'prop-types';
 
+function setBg() {
+  const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+  return '#' + randomColor;
+}
+
 const Statistics = ({ title, stats }) => {
   return (
     <section className={css.statistics}>
@@ -9,7 +14,11 @@ const Statistics = ({ title, stats }) => {
 
       <ul className={css.statList}>
         {stats.map(el => (
-          <li className={css.item} key={el.id}>
+          <li
+            className={css.item}
+            key={el.id}
+            style={{ backgroundColor: setBg() }}
+          >
             <span className={css.label}>{el.label} </span>
             <span className={css.percentage}>{el.percentage}%</span>
           </li>

@@ -22,20 +22,20 @@
 }
 
 .item {
-  /* background-color: teal; */
   padding-top: 10px;
-
   flex-wrap: wrap;
   width: 60px;
-  outline: 1px solid teal;
+  /* outline: 1px solid teal; */
   padding-bottom: 10px;
 }
 
 .label {
+  color: white;
   display: block;
   padding-bottom: 5px;
 }
 
 .percentage {
+  color: white;
   font-weight: 700;
 }
