@@ -1,5 +1,6 @@
 import css from '../Statistics/Index.module.css';
 import propTypes from 'prop-types';
+// import setBg from '.../js/randomColor.js';
 
 function setBg() {
   const randomColor = Math.floor(Math.random() * 16777215).toString(16);
