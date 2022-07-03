@@ -36,7 +36,7 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
 };
 
 Profile.propTypes = {
-  key: propTypes.string.isRequired,
+  // key: propTypes.string.isRequired,
   username: propTypes.string.isRequired,
   tag: propTypes.string.isRequired,
   location: propTypes.string.isRequired,

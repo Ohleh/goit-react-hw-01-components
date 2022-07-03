@@ -30,7 +30,7 @@ TransactionHistory.propTypes = {
     propTypes.shape({
       id: propTypes.string.isRequired,
       type: propTypes.string.isRequired,
-      amount: propTypes.number.isRequired,
+      amount: propTypes.string.isRequired,
       currency: propTypes.string.isRequired,
     })
   ),
